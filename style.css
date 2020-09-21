@@ -82,7 +82,7 @@ img {
     max-width: 100%;
   }
 }
-
+/* RESPONSIVE < 420PX */
 @media screen and (max-width: 420px) {
 
   #lezioni .row>.left,
@@ -102,5 +102,48 @@ img {
   #why .row>.second,
   #why .row>.third{
     width: 100%;
+  }
+}
+
+/* RESPONSIVE TABLET */
+@media screen and (max-width: 568px) {
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 568px) {
+
+  #steps .row>.left,
+  #steps .row>.central {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  #steps .row>.right{
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width: calc(100%/3);
   }
 }
